@@ -1,10 +1,14 @@
 # profileDetails
 
 ## 초기 디자인
-프로![처음구상](https://github.com/seonahsong/profileDetails/assets/170864632/9d7d474f-1c77-44b3-9765-f399db4c395c)
-필 상세, 정보변경
+
+![처음구상](https://github.com/seonahsong/profileDetails/assets/170864632/9d7d474f-1c77-44b3-9765-f399db4c395c)
+
+
+
 
 ## 중간완성
+
 ![완성1](https://github.com/seonahsong/profileDetails/assets/170864632/5f65b341-b621-49eb-9a34-8130d1bd4473)
 ![완성2](https://github.com/seonahsong/profileDetails/assets/170864632/9eb9d3c1-3656-43d5-a82e-baeed27fe872)
 
