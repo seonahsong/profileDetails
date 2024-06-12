@@ -3,8 +3,11 @@ body {
     text-align: center;
     background-color:#EEE;
     color: #333;
-    
-}
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    }
 
 #det {
   font-size: 50px;
@@ -23,7 +26,6 @@ button {
 
 .modal {
     display: none;
-    position: fixed;
     align-items: center;
     justify-content: center;
     left: 0;
@@ -46,6 +48,7 @@ button {
     height: 100%;
     box-shadow: 0 4px 8px #888(0, 0, 0, 0.1);
     overflow: hidden;
+    position: relative;
     z-index: 2;
 }
 
@@ -92,10 +95,7 @@ button {
         gap: 16px;
         margin:auto;
         border-radius: 6px;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding: 30px 20px;
         text-align: left;
 }
 p{display: flex;

@@ -2,6 +2,7 @@
 const openModalBtn = document.getElementById('openModalBtn');
 const closeModalBtn = document.querySelector('.close-btn');
 const modal = document.getElementById('modal');
+const modalHeader = document.querySelector('.modal-handle'); // 모달 헤더 선택
 const infoForm = document.getElementById('infoForm');
 const outputName = document.getElementById('outputName');
 const outputEmail = document.getElementById('outputEmail');
@@ -24,7 +25,7 @@ closeModalBtn.addEventListener('click', closeModal);
 infoForm.addEventListener('submit', handleFormSubmit);
 infoForm.addEventListener('submit', saveInfo);
 window.addEventListener('load', loadSavedInfo);
-modal.addEventListener('mousedown', onMouseDown); // 수정된 부분: modalHeader -> modal
+modalHeader.addEventListener('mousedown', onMouseDownModalHeader); // 수정된 부분: modal -> modalHeader
 
 // 모달 열기
 function openModal() {
@@ -97,7 +98,7 @@ function loadSavedInfo() {
     const savedPosition = localStorage.getItem('position');
     const savedEmail = localStorage.getItem('email');
     const savedPhoneNumber = localStorage.getItem('phoneNumber');
-    
+
     if (savedName) {
         nameInput.value = savedName;
     }
@@ -128,10 +129,10 @@ function saveInfo(event) {
     localStorage.setItem('email', emailValue);
     localStorage.setItem('phoneNumber', phoneNumberValue);
 }
-
-// 모달 드래그 기능
-function onMouseDown(e) {
+// 모달 헤더 드래그 기능
+function onMouseDownModalHeader(e) {
     if (e.button !== 0) return;     // 마우스 왼쪽 버튼이 아니면 종료
+    if (e.target !== modalHeader) return; // 드래그 시작 요소가 모달 헤더가 아니면 종료
     isDragging = true;
     startX = e.clientX;
     startY = e.clientY;
@@ -139,7 +140,7 @@ function onMouseDown(e) {
     initialY = modal.offsetTop;
     document.addEventListener('mousemove', onMouseMove);
     document.addEventListener('mouseup', onMouseUp);
-}
+
 // 마우스 무브 이벤트 핸들러
 function onMouseMove(e) {
     if (isDragging) {
@@ -172,6 +173,4 @@ outputImage.addEventListener('mousedown', stopDragging, true);
 function stopDragging(event) {
     event.stopPropagation();
 }
-
-modal.addEventListener('mousedown', onMouseDownModalHeader); // 수정된 부분: modalHeader -> modal
-
+ }
