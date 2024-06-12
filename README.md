@@ -6,6 +6,10 @@
 - 적용기술 : html, css, js
 - 기록 : git, 노션 회의록
 
+# 유저플로우
+![유저플로우](https://github.com/seonahsong/profileDetails/assets/170864632/400e263a-2322-4428-8df7-8cb7897131f9)
+
+
 # 상세 페이지
 
 ## 초기 디자인
