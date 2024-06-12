@@ -1,40 +1,22 @@
-# 팀프로젝트
+# 토이프로젝트1
 
-1. 요구사항 분석 - 인트라넷 구현
-2. 프로젝트 관리 - 매주 월수금
-3. 역할분담 - 프로필 상세페이지
-4. 아키텍처 설계 - 프레임워크 정하기, 유저플로우 작성
-5. 기술 선택 - vscode, html,css, js
-6. 보안 - x
-7. 테스트 및 품질 보증 - 서로 확인
-8. 배포 및 유지보수 - 유지보수가 가능하게 코드 짜기
-9. 사용자 피드백 및 개선 - 서로 피드백해주기
-10. 문서화 -git, 노션 회의록
+- 목표 : 인트라넷 구현
+- 미팅: 매주 월수금 (상황에 따라 변경)
+- 역할분담 : 관리자용 프로필 상세페이지 (나)
+- 사용 언어 : html,css, js
+- 기록 : git, 노션 회의록
 
-## 팀원들과 할일
-
-- 프레임워크 정하기
-- 유저플로우 작성
-
-## 나의 할일
-
-- 코드 피드백
-- 디자인 손보기
-- 아무것도 입력안했을때 예시 사진과 글 넣기
-
-
-# profileDetails
+# 상세 페이지
 
 ## 초기 디자인
 
-![처음구상](https://github.com/seonahsong/profileDetails/assets/170864632/9d7d474f-1c77-44b3-9765-f399db4c395c)
-
+![처음 디자인](https://github.com/seonahsong/profileDetails/assets/170864632/252eb845-8c65-4ed7-8d3b-3e1736d548be)
 
 
 ## 기본틀 완성
 
-![완성1](https://github.com/seonahsong/profileDetails/assets/170864632/5f65b341-b621-49eb-9a34-8130d1bd4473)
-![완성2](https://github.com/seonahsong/profileDetails/assets/170864632/9eb9d3c1-3656-43d5-a82e-baeed27fe872)
+![완성](https://github.com/seonahsong/profileDetails/assets/170864632/ea74d876-be03-4868-9b29-1f1eed59626f)
+
 
 ## 업데이트 1 (6/11)
 1. 모달 열었을때 가운데로 위치하게 변경
