@@ -131,7 +131,7 @@ function saveInfo(event) {
 
 // 모달 드래그 기능
 function onMouseDown(e) {
-    if (e.button !== 0) return; // 마우스 왼쪽 버튼이 아니면 종료
+    if (e.button !== 0) return;     // 마우스 왼쪽 버튼이 아니면 종료
     isDragging = true;
     startX = e.clientX;
     startY = e.clientY;
@@ -160,3 +160,18 @@ function onMouseUp() {
     // 페이지 스크롤 다시 활성화
     document.body.style.overflow = 'auto';
 }
+
+// 요소들에 대해서 이벤트 캡처링 적용
+outputName.addEventListener('mousedown', stopDragging, true);
+outputEmail.addEventListener('mousedown', stopDragging, true);
+outputPhoneNumber.addEventListener('mousedown', stopDragging, true);
+outputPosition.addEventListener('mousedown', stopDragging, true);
+outputImage.addEventListener('mousedown', stopDragging, true);
+
+// 드래그 이벤트를 중단하는 함수
+function stopDragging(event) {
+    event.stopPropagation();
+}
+
+modal.addEventListener('mousedown', onMouseDownModalHeader); // 수정된 부분: modalHeader -> modal
+
